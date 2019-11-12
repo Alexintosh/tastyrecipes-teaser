@@ -188,11 +188,13 @@ img.dexwalletlogo {
     align-content: stretch;
     margin: 0;
     padding: 0;
+    height: 100vh;
+
 
   }
 
   .mainContent {
-    height: 78vh;
+    height: 82vh;
     padding: 0vh 2vh;
     margin-top: 0;
   }
@@ -233,6 +235,6 @@ img.dexwalletlogo {
 
   img.dexwalletlogo {
     height: 25px;
-    margin-top: 5vh;
+    margin-top: 8vh;
   }
 }
