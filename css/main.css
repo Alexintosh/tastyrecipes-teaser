@@ -1,0 +1,236 @@
+/* MAIN & VARIABLES */
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap");
+
+:root {
+  --primary-color: #18c1ee;
+  --accent-color: #fe0;
+  --white: white;
+  --black: black;
+  --light-grey: #f5f5f5;
+  --medium-grey: #cccccc;
+  --main-font: "Rubik", sans-serif;
+  --regular: 400;
+  --bold: 700;
+  --small-text: 0.9rem;
+  --p-text: 1.2rem;
+  --p-titles: 1.2rem;
+  --h1-titles: 2.2rem;
+  --h1-titles-line: 2.6rem;
+  --very-big: 8rem;
+  --very-big-mobile: 2.6rem;
+}
+
+a {
+  height: 0;
+}
+
+/* MY PAGE */
+
+body {
+  background: url(/images/bg02.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: var(--main-font);
+  background-color: var(--white);
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-self: auto;
+  align-content: stretch;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+  padding: 5% 14%;
+}
+
+img.logo {
+  width: 280px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1.title {
+  margin-top: 30px;
+  text-align: center;
+  font-size: var(--h1-titles);
+  line-height: var(--h1-titles-line);
+}
+
+.highlights {
+  font-weight: 700;
+
+  color: var(--black);
+  background: var(--accent-color);
+}
+
+h2 {
+  font-size: var(--p-titles);
+}
+
+h2.newsletterTitle {
+  text-align: center;
+}
+
+.newsletter {
+  margin-top: 30px;
+}
+
+form.newsletterForm {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+input {
+  border: solid 1px var(--black);
+  border-radius: 0.4rem;
+  padding: 20px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-right: 20px;
+}
+
+input::placeholder {
+  color: var(--medium-grey);
+  font-size: var(--p-text);
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+input:focus::placeholder {
+  color: transparent;
+}
+
+button.submitButton {
+  display: block;
+  font-size: var(--p-text);
+  font-family: var(--main-font);
+  font-weight: 700 !important;
+  color: var(--black);
+  text-decoration: none;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary-color);
+}
+
+button:hover {
+  transition-property: background color;
+  transition-duration: 0.2s;
+  background-color: var(--black);
+  color: var(--white);
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🍔</text></svg>")
+      16 0,
+    auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  /* position: absolute;
+  bottom: 0; */
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  color: black;
+}
+
+img.socialicon {
+  height: 20px;
+}
+
+.smallFooter {
+  display: flex;
+}
+
+img.dexwalletlogo {
+  height: 30px;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+
+  body {
+    background: url(/images/bg02mobile.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    align-self: auto;
+    align-content: stretch;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .mainContent {
+    height: 86vh;
+    padding: 0vh 2vh;
+  }
+
+  img.logo {
+    width: 50vw;
+  }
+
+  h1.title {
+    /* margin-top: 30px; */
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  form.newsletterForm {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 20px; */
+  }
+
+  button.submitButton {
+    margin-top: 1vh;
+    width: 100%;
+  }
+
+  input {
+    margin: 0;
+  }
+
+  .socialIcons {
+    width: 60%;
+  }
+  
+  img.socialicon {
+  }
+
+  img.dexwalletlogo {
+    height: 25px;
+    margin-top: 5vh;
+  }
+}
