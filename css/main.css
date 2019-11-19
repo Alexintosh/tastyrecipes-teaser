@@ -89,7 +89,7 @@ h2.newsletterTitle {
   margin-top: 30px;
 }
 
-form.newsletterForm {
+.newsletterForm {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
@@ -119,7 +119,7 @@ input:focus::placeholder {
   color: transparent;
 }
 
-button.submitButton {
+.submitButton {
   display: block;
   font-size: var(--p-text);
   font-family: var(--main-font);
@@ -132,7 +132,7 @@ button.submitButton {
   background: var(--primary-color);
 }
 
-button:hover {
+.submitButton:hover {
   transition-property: background color;
   transition-duration: 0.2s;
   background-color: var(--black);
@@ -212,13 +212,13 @@ img.dexwalletlogo {
     line-height: 2rem;
   }
 
-  form.newsletterForm {
+  .newsletterForm {
     display: flex;
     flex-direction: column;
     /* margin-top: 20px; */
   }
 
-  button.submitButton {
+  .submitButton {
     margin-top: 1vh;
     width: 100%;
   }
