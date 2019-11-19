@@ -170,7 +170,11 @@ img.socialicon {
 img.dexwalletlogo {
   height: 50px;
   margin: 50px 10px 0 10px;
-  
+}
+
+img.footerlogo {
+  height: 40px;
+  margin: 50px 15px 0 15px;
 }
 
 @media (max-width: 600px) {
@@ -230,12 +234,16 @@ img.dexwalletlogo {
   .socialIcons {
     width: 60%;
   }
-  
-  img.socialicon {
-  }
 
   img.dexwalletlogo {
     height: 25px;
     margin-top: 8vh;
   }
+
+
+  img.footerlogo {
+    height: 25px;
+    margin-top: 8vh;
+  }
+  
 }
